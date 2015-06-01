@@ -1,8 +1,8 @@
 var gulp        = require('gulp'),
-	jade        = require('gulp-jade'),
-	stylus      = require('gulp-stylus'),
-	watch       = require('gulp-watch'),
-	browserSync = require('browser-sync');
+	  jade        = require('gulp-jade'),
+	  stylus      = require('gulp-stylus'),
+	  watch       = require('gulp-watch'),
+	  browserSync = require('browser-sync');
 
 /*****************************************/
 var path = {
@@ -17,7 +17,7 @@ var pathDest = {
 
 /*****************************************/
 gulp.task('html',function(){
-	gulp.src(path.jadeTask)
+	return gulp.src(path.jadeTask)
 		.pipe(jade({
 			pretty:true
 		}))
@@ -25,7 +25,7 @@ gulp.task('html',function(){
 });
 
 gulp.task('stylus',function(){
-	gulp.src(path.stylusTask)
+	return gulp.src(path.stylusTask)
 		.pipe(stylus())
 		.pipe(gulp.dest(pathDest.css));
 });
