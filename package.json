@@ -1,0 +1,26 @@
+{
+  "name": "rulescss-demo",
+  "version": "1.0.0",
+  "description": "demo rulescss",
+  "main": "index.js",
+  "scripts": {
+    "test": "test 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilsson/rulescss-demo.git"
+  },
+  "author": "wilson ft",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wilsson/rulescss-demo/issues"
+  },
+  "homepage": "https://github.com/wilsson/rulescss-demo#readme",
+  "devDependencies": {
+    "browser-sync": "^2.7.6",
+    "gulp": "^3.8.11",
+    "gulp-jade": "^1.0.1",
+    "gulp-stylus": "^2.0.2",
+    "gulp-watch": "^4.2.4"
+  }
+}
