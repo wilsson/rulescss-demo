@@ -4,10 +4,9 @@ var gulp        = require('gulp'),
 	  watch       = require('gulp-watch'),
 	  browserSync = require('browser-sync');
 
-/*****************************************/
 var path = {
 	jadeTask   : 'myApp/jade/**/*.jade',
-	stylusTask : 'myApp/stylus/views/**/*.styl'
+	stylusTask : 'myApp/stylus/**/*.styl'
 };
 
 var pathDest = {
@@ -15,7 +14,6 @@ var pathDest = {
 	css  : 'src/css/'
 };
 
-/*****************************************/
 gulp.task('html',function(){
 	return gulp.src(path.jadeTask)
 		.pipe(jade({
@@ -30,7 +28,6 @@ gulp.task('stylus',function(){
 		.pipe(gulp.dest(pathDest.css));
 });
 
-/*****************************************/
 gulp.task("browser-sync", function(){
     browserSync({
         server: {
@@ -41,16 +38,13 @@ gulp.task("browser-sync", function(){
     });
 });
 
-/*****************************************/
 var reload = browserSync.reload; 
 var jadeTask   = ['html',reload];
 var stylusTask = ['stylus',reload];
 
-/*****************************************/
 gulp.task('watch',function(){
 	gulp.watch(path.jadeTask,jadeTask);
 	gulp.watch(path.stylusTask,stylusTask);
 });
 
-/*****************************************/
 gulp.task("server", ["browser-sync", "watch"]);
