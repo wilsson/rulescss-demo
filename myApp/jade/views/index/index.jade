@@ -1,20 +1,21 @@
 extends ../../layout/layout.jade
- 
-block link
+
+block link 
 	link(rel="stylesheet" type="text/css" href="../../css/base/normalize.css")
 	link(rel="stylesheet" type="text/css" href="../../css/views/index/index.css")
+	link(rel="stylesheet" type="text/css" href="../../css/views/all.css")
 	link(rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
 
-block content   
-	header.vHome_dHeader
+block content
+	header.vHome_dHeader 
 		.vHome_bHeader.uCf
 			img(src="http://placehold.it/200x100&text=Mamazon").vHome_bHeader_eImage
-			.vHome_bSearch
+			.vHome_bHeader_bSearch
 				input.vHome_bSearch_eInput
 				button.vHome_bSearch_eButton 
 					span buscar
-					i(class="fa fa-search")
-	
+					i(class="fa fa-search") 
+
 	nav.vHome_dTopNav 
 		ul.vHome_bTopNav
 			li.vHome_bTopNav_eItem
@@ -26,70 +27,109 @@ block content
 			li.vHome_bTopNav_eItem
 				a(href="#").vHome_bTopNav_eItemTarget Regalos
 			li.vHome_bTopNav_eItem
-				a(href="#").vHome_bTopNav_eItemTarget Ayuda
+				a(href="../ayuda/ayuda.html").vHome_bTopNav_eItemTarget Ayuda
 
-
-	.vHome_bGallery.uCf
-		.vHome_bGalleryItem
-			img(src="http://placehold.it/180x180&text=invoker").vHome_bGalleryItem_eImage
+	.vHome_bGallery.uCf 
+		a(href="#").vHome_bGalleryItem
+			img(src="http://placehold.it/200x200&text=invoker").vHome_bGalleryItem_eImage
 			.vHome_bGalleryItemDescription
 				span.title invoker
-				span Mago, Carril central.
-				span $300.00
-		.vHome_bGalleryItem
-			img(src="http://placehold.it/180x180&text=invoker").vHome_bGalleryItem_eImage
+				span
+					i.fa.fa-tag
+					|Mago, Carril central.
+				span 
+					i.fa.fa-usd 
+					|300.00
+		a(href="#").vHome_bGalleryItem
+			img(src="http://placehold.it/200x200&text=invoker").vHome_bGalleryItem_eImage
 			.vHome_bGalleryItemDescription
 				span.title invoker
-				span Mago, Carril central.
-				span $300.00
-		.vHome_bGalleryItem
-			img(src="http://placehold.it/180x180&text=invoker").vHome_bGalleryItem_eImage
+				span
+					i.fa.fa-tag
+					|Mago, Carril central.
+				span 
+					i.fa.fa-usd 
+					|300.00
+		a(href="#").vHome_bGalleryItem
+			img(src="http://placehold.it/200x200&text=invoker").vHome_bGalleryItem_eImage
 			.vHome_bGalleryItemDescription
 				span.title invoker
-				span Mago, Carril central.
-				span $300.00
-		.vHome_bGalleryItem
-			img(src="http://placehold.it/180x180&text=invoker").vHome_bGalleryItem_eImage
+				span
+					i.fa.fa-tag
+					|Mago, Carril central.
+				span 
+					i.fa.fa-usd 
+					|300.00
+		a(href="#").vHome_bGalleryItem
+			img(src="http://placehold.it/200x200&text=invoker").vHome_bGalleryItem_eImage
 			.vHome_bGalleryItemDescription
 				span.title invoker
-				span Mago, Carril central.
-				span $300.00
-		.vHome_bGalleryItem
-			img(src="http://placehold.it/180x180&text=invoker").vHome_bGalleryItem_eImage
+				span
+					i.fa.fa-tag
+					|Mago, Carril central.
+				span 
+					i.fa.fa-usd 
+					|300.00
+		a(href="#").vHome_bGalleryItem
+			img(src="http://placehold.it/200x200&text=invoker").vHome_bGalleryItem_eImage
 			.vHome_bGalleryItemDescription
 				span.title invoker
-				span Mago, Carril central.
-				span $300.00
-		.vHome_bGalleryItem
-			img(src="http://placehold.it/180x180&text=invoker").vHome_bGalleryItem_eImage
+				span
+					i.fa.fa-tag
+					|Mago, Carril central.
+				span 
+					i.fa.fa-usd 
+					|300.00
+		a(href="#").vHome_bGalleryItem
+			img(src="http://placehold.it/200x200&text=invoker").vHome_bGalleryItem_eImage
 			.vHome_bGalleryItemDescription
 				span.title invoker
-				span Mago, Carril central.
-				span $300.00
-		.vHome_bGalleryItem
-			img(src="http://placehold.it/180x180&text=invoker").vHome_bGalleryItem_eImage
+				span
+					i.fa.fa-tag
+					|Mago, Carril central.
+				span 
+					i.fa.fa-usd 
+					|300.00
+		a(href="#").vHome_bGalleryItem
+			img(src="http://placehold.it/200x200&text=invoker").vHome_bGalleryItem_eImage
 			.vHome_bGalleryItemDescription
 				span.title invoker
-				span Mago, Carril central.
-				span $300.00
-		.vHome_bGalleryItem
-			img(src="http://placehold.it/180x180&text=invoker").vHome_bGalleryItem_eImage
+				span
+					i.fa.fa-tag
+					|Mago, Carril central.
+				span 
+					i.fa.fa-usd 
+					|300.00
+		a(href="#").vHome_bGalleryItem
+			img(src="http://placehold.it/200x200&text=invoker").vHome_bGalleryItem_eImage
 			.vHome_bGalleryItemDescription
 				span.title invoker
-				span Mago, Carril central.
-				span $300.00
-		.vHome_bGalleryItem
-			img(src="http://placehold.it/180x180&text=invoker").vHome_bGalleryItem_eImage
+				span
+					i.fa.fa-tag
+					|Mago, Carril central.
+				span 
+					i.fa.fa-usd 
+					|300.00
+		a(href="#").vHome_bGalleryItem
+			img(src="http://placehold.it/200x200&text=invoker").vHome_bGalleryItem_eImage
 			.vHome_bGalleryItemDescription
 				span.title invoker
-				span Mago, Carril central.
-				span $300.00
-		.vHome_bGalleryItem
-			img(src="http://placehold.it/180x180&text=invoker").vHome_bGalleryItem_eImage
+				span
+					i.fa.fa-tag
+					|Mago, Carril central.
+				span 
+					i.fa.fa-usd 
+					|300.00
+		a(href="#").vHome_bGalleryItem
+			img(src="http://placehold.it/200x200&text=invoker").vHome_bGalleryItem_eImage
 			.vHome_bGalleryItemDescription
 				span.title invoker
-				span Mago, Carril central.
-				span $300.00
+				span
+					i.fa.fa-tag
+					|Mago, Carril central.
+				span 
+					i.fa.fa-usd 
+					|300.00
 	footer.vHome_dFooter
 		.vHome_bFooter
-			span Todos los derechos reservados.
+			span Todos los derechos reservados. 
