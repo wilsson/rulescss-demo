@@ -1,8 +1,11 @@
+/* - - - - - - - - - - - - - - - - */
+@import 'jeet'  
+
 /* - - - - - - - - - - - - - - - - */	
 .vHome_dHeader
 	background-color #e7e7e6
 	
-.vHome_bHeader
+.vHome_bHeader 
 	font-size 0
 	width 960px
 	margin 0 auto
@@ -54,7 +57,6 @@
 	background-color #d9d9d8
 
 .vHome_bTopNav
-	margin 0
 	height 50px
 	width 960px
 	margin 0 auto
@@ -77,13 +79,11 @@
 	&:hover 
 		background-color darken(#d9d9d8,10%)	
 		
-/* - - - - - - - - - - - - - - - - */	
+/* - - - - - - - - - - - - - - - - 8.5*/	
 .vHome_bGalleryItem
-	float left
-	width 180px
+	col(3/12,cycle: 4,gutter:8.33333333333)
 	box-shadow 0 3px 0 0 #d4d4d5,0 0 0 1px #d4d4d5
-	margin-right 56px
-	margin-top 40px
+	margin-top 54px
 	
 .vHome_bGallery
 	width 960px 
@@ -95,14 +95,21 @@
 	padding 10px
 	span
 		display block
-		color #c9cacb
+		color #969696
 		font-size 14px
 	.title
 		font-weight bold
 		font-size 14px
 		color black
 		
-
+/* - - - - - - - - - - - - - - - - */
+.vHome_dFooter
+	background-color #d9d9d8
+.vHome_bFooter
+	width 960px
+	margin 0 auto
+	text-align left
+	padding 30px 10px
 /* - - - - - - - - - - - - - - - - */
 .uCf
 	&:before

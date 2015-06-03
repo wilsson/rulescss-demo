@@ -1,8 +1,9 @@
 var gulp        = require('gulp'),
-	  jade        = require('gulp-jade'),
-	  stylus      = require('gulp-stylus'),
-	  watch       = require('gulp-watch'),
-	  browserSync = require('browser-sync');
+	jeet        = require('jeet'),
+	jade        = require('gulp-jade'),
+	stylus      = require('gulp-stylus'),
+	watch       = require('gulp-watch'),
+	browserSync = require('browser-sync');
 
 var path = {
 	jadeTask   : 'myApp/jade/**/*.jade',
@@ -24,7 +25,10 @@ gulp.task('html',function(){
 
 gulp.task('stylus',function(){
 	return gulp.src(path.stylusTask)
-		.pipe(stylus())
+		.pipe(stylus({
+			use: jeet(),
+			compress: false
+		}))
 		.pipe(gulp.dest(pathDest.css));
 });
 
