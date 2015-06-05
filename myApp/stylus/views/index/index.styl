@@ -1,6 +1,5 @@
 /* - - - - - - - - - - - - - - - - */
-@import 'jeet'  
-
+@import 'jeet'   
 /* - - - - - - - - - - - - - - - - */	
 .vHome_bHeaderWrapper
 	background-color #e7e7e6
@@ -19,9 +18,9 @@
 	width 200px
 	height 100px
 	vertical-align bottom
-	margin-right 56px
+	
 
-.vHome_bSearch
+.vHome_bHeader_bSearch
 	display inline-block 
 	vertical-align bottom
 
@@ -47,10 +46,16 @@
 	i
 	span
 		font-size 15px
+		color #444
 	span
+		font-weight bold
 		text-transform uppercase
 	i
 		margin-left 10px
+
+[class*="vHome_bHeader_"]
+	&:first-child
+		margin-right 56px
 
 /* - - - - - - - - - - - - - - - - */	
 .vHome_dTopNav
@@ -73,7 +78,7 @@
 	width 120px
 	display block
 	height 50px
-	color black
+	color #444
 	text-decoration none
 	line-height 50px
 	&:hover 
@@ -81,7 +86,8 @@
 		
 /* - - - - - - - - - - - - - - - - 8.5*/	
 .vHome_bGalleryItem
-	col(3/12,cycle: 4,gutter:8.33333333333)
+	text-decoration none
+	col(3/12,cycle: 4,gutter:5.55555555557)
 	box-shadow 0 3px 0 0 #d4d4d5,0 0 0 1px #d4d4d5
 	margin-top 54px
 	
@@ -92,15 +98,19 @@
 	//margin-top 46px
 
 .vHome_bGalleryItemDescription	
-	padding 10px
+	padding 10px 20px
 	span
 		display block
 		color #969696
 		font-size 14px
+		line-height 24px
+		i 
+			width 14px
+			margin-right 10px
 	.title
 		font-weight bold
 		font-size 14px
-		color black
+		color #444
 		
 /* - - - - - - - - - - - - - - - - */
 .vHome_bFooterWrapper
