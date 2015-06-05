@@ -52,3 +52,4 @@ gulp.task('watch',function(){
 });
 
 gulp.task("server", ["browser-sync", "watch"]);
+gulp.task("default", ["html", "stylus"]);
