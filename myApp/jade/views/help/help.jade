@@ -2,20 +2,22 @@ extends ../../layout/layout.jade
 
 block link 
 	link(rel="stylesheet" type="text/css" href="../../css/base/normalize.css")
-	link(rel="stylesheet" type="text/css" href="../../css/views/all.css")
 	link(rel="stylesheet" type="text/css" href="../../css/views/help/help.css") 
+	link(rel="stylesheet" type="text/css" href="../../css/views/all.css")
 	link(rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
 
 block content   
 	nav.bTopNavWrapper.vHelp
 		ul.bTopNav
 			li.bTopNav_eItem
-				a(href="#").bTopNav_eItemTarget Ofertas de hoy
+				a(href="../index/index.html").bTopNav_eItemTarget.vHelp Inicio
 			li.bTopNav_eItem
-				a(href="#").bTopNav_eItemTarget Lo ultimo
+				a(href="#").bTopNav_eItemTarget.vHelp Ofertas de hoy
 			li.bTopNav_eItem
-				a(href="#").bTopNav_eItemTarget Destacados
+				a(href="#").bTopNav_eItemTarget.vHelp Lo ultimo
 			li.bTopNav_eItem
-				a(href="#").bTopNav_eItemTarget Regalos
+				a(href="#").bTopNav_eItemTarget.vHelp Destacados
 			li.bTopNav_eItem
-				a(href="#").bTopNav_eItemTarget Ayuda
+				a(href="#").bTopNav_eItemTarget.vHelp Regalos
+			li.bTopNav_eItem
+				a(href="#").bTopNav_eItemTarget.vHelp Ayuda
